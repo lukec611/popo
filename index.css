@@ -290,9 +290,9 @@ body {
     width: 38px;
     height: 32px;
     position: absolute;
-    top: 38px;
-    left: 225px;
-    transform: rotateX(62deg) rotateZ(-130deg) scale(0.42);
+    top: 40px;
+    left: 229px;
+    transform: rotateX(62deg) rotateZ(-118deg) scale(0.48);
     perspective: 8009px;
 }
 
