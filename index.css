@@ -4,29 +4,11 @@ body {
     margin: 0;
 }
 
-#container {
-    border-left: 7px dashed darkblue;
-    border-right: 7px dashed darkblue;
-    width: 90vw;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    left: 5vw;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 #popo {
     width: 260px;
-    height: 120px;
+    height: 140px;
     position: relative;
-}
-
-.name {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
+    background-color: lightgrey;
 }
 
 .main-head {
@@ -47,48 +29,75 @@ body {
 
 .eye {
     position: absolute;
-    top: 5px;
-    left: 40px;
-    transform: rotate(20deg);
+    width: 20px;
+    height: 10px;
 }
 
-.eye-2 {
+.left-eye {
+    top: 20px;
+    left: 45px;
+    transform: rotate(10deg);
+}
+
+.right-eye {
+    top: 20px;
+    left: 5px;
+    transform: rotate(-10deg);
+}
+
+.eye-circle-wrapper {
     position: absolute;
-    top: 3px;
-    left: -3px;
-    transform: rotate(-17deg);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 35%;
+    overflow: hidden;
 }
 
 .eye-circle {
-    width: 20px;
-    height: 20px;
-    border-bottom: 3px solid black;
-    border-radius: 30%;
+    position: absolute;
+    top: -120%;
+    left: 0;
+    width: 80%;
+    height: 200%;
+    border-radius: 50%;
+    border: 2px solid black;
+    transform: scale(1, 0.7);
+    transform-origin: 0 0;
 }
 
 .eye-lash {
-    width: 5px;
-    height: 2px;
+    position: absolute;
+    top: 30%;
+    left: 45%;
+    width: 10%;
+    height: 35%;
+    border-radius: 30%;
     background-color: black;
-    transform: translate(12px, 1px) rotate(80deg);
 }
 
 .eye-lash:before {
-    width: 5px;
-    height: 2px;
+    width: 100%;
+    height: 100%;
+    border-radius: 30%;
     background-color: black;
     content: ' ';
     display: block;
-    transform: translate(-1px, 6px) rotate(10deg);
+    transform: translate(-250%, -20%) rotate(30deg);
+    transform-origin: 50% 0%;
 }
 
 .eye-lash:after {
-    width: 5px;
-    height: 2px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 30%;
     background-color: black;
     content: ' ';
     display: block;
-    transform: translate(-3px, 9px) rotate(32deg);
+    transform: translate(250%, -20%) rotate(-30deg);
 }
 
 .left-ear {
